@@ -1,13 +1,13 @@
 var frame = document.getElementById("frame")
+var url = document.getElementById("url")
+var hidingDiv = document.getElementById("hidingDiv")
 
-window.onload = function () {
-    if (window.location.href.includes("#")) {
-        if (window.location.href.split("#", 2)[1].includes("https://") || window.location.href.split("#", 2)[1].includes("https://")) {
-            frame.src = window.location.href.split("#", 2)[1]
-        } else {
-            frame.src = "https://" + window.location.href.split("#", 2)[1]
-        }
+function loadFrame() {
+    if (url.value.includes("https://") || url.value.includes("https://")) {
+        frame.src = url.value
     } else {
-        frame.srcdoc = "<h1>Welcome to BetterView!</h1>\n<p>Add a # (hashtag) and then a link to the end of the URL above to access a website</P>"
+        frame.src = "https://" + url.value
     }
+    hidingDiv.style.display = "none"
+    frame.style.display = "block"
 }

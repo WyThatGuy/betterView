@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <iframe id="frame" width="100%" height="100%"></iframe>
+    <div id="hidingDiv">
+      <input id="url" type="url"/>
+      <button onclick="loadFrame()">Submit</button>
+    </div>
+    <iframe style="display: none;" id="frame" width="100%" height="100%"></iframe>
     <script src="index.js" defer></script>
   </body>
 </html>
