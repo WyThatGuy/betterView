@@ -1,7 +1,7 @@
 var frame = document.getElementById("frame")
 
 if (location.href.includes("#")) {
-    if (location.href.split("#", 1)[1].includes("https://") || location.href.split("#", 1)[1].includes("https://")) {
+    if (location.href.split("#", 2)[1].includes("https://") || location.href.split("#", 2)[1].includes("https://")) {
         frame.src = location.href.split("#", 1)[1]
     } else {
         frame.src = "http://" + location.href.split("#", 1)[1]
