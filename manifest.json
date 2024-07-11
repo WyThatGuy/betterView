@@ -1,7 +1,7 @@
 {
     "name": "Better View",
     "short_name": "BetterView",
-    "start_url": "/web-app-test",
+    "start_url": "/betterView",
     "display_override": ["fullscreen", "minimal-ui"],
     "display": "standalone",
     "icons": [
